@@ -1,0 +1,3 @@
+#!/bin/bash
+$CFILE = "c"
+gcc -o $CFILE
