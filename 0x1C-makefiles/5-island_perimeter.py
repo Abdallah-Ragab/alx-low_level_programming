@@ -36,7 +36,8 @@ def island_perimeter(grid):
     Calculates the perimeter of an island represented by a grid.
 
     Args:
-        grid (list): A 2D grid representing the island, where 1 represents land and 0 represents water.
+        grid (list): A 2D grid representing the island,
+        where 1 represents land and 0 represents water.
 
     Returns:
         int: The perimeter of the island.
@@ -52,7 +53,8 @@ def island_perimeter(grid):
     def calculate_cell_perimeter(cell_borders):
         perimeter = 0
         for border in cell_borders:
-            if border == 0: perimeter += 1
+            if border == 0:
+                perimeter += 1
         return perimeter
 
     total_perimeter = 0
@@ -60,6 +62,8 @@ def island_perimeter(grid):
     for y in range(len(grid)):
         for x in range(len(grid[y])):
             if grid[y][x] == 1:
-                total_perimeter += calculate_cell_perimeter(cell_borders(grid, x, y))
+                total_perimeter += calculate_cell_perimeter(
+                    cell_borders(grid, x, y)
+                    )
 
     return total_perimeter
