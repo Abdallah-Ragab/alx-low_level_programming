@@ -54,12 +54,3 @@ def island_perimeter(grid):
                 total_perimeter += calculate_cell_perimeter(cell_borders(grid, x, y))
 
     return total_perimeter
-
-grid = [
-    [0, 0, 0, 0, 0, 0],
-    [0, 1, 0, 0, 0, 0],
-    [0, 1, 0, 0, 0, 0],
-    [0, 1, 1, 1, 0, 0],
-    [0, 0, 0, 0, 0, 0]
-]
-print(island_perimeter(grid))
