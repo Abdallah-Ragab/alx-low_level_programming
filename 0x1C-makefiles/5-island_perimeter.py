@@ -45,7 +45,7 @@ def island_perimeter(grid):
         cell_top = grid[y - 1][x] if y > 0 else 0
         cell_bottom = grid[y + 1][x] if y < len(grid) - 1 else 0
         cell_left = grid[y][x - 1] if x > 0 else 0
-        cell_right = grid[y][x + 1] if x < len(grid[y]) else 0
+        cell_right = grid[y][x + 1] if x < len(grid[y]) - 1 else 0
 
         return (cell_top, cell_bottom, cell_left, cell_right)
 
